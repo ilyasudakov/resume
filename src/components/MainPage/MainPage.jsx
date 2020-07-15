@@ -111,22 +111,40 @@ const MainPage = (props) => {
               </li>
             </ul>
           </div>
-          <div className="main-page__card main-page__card--job-history">
-            <h2>Где я работал</h2>
-            <ul>
-              <li>
-                {/* <div className="main-page__date">Ноябрь 2019 - Тек. время</div> */}
-                <div className="main-page__date">Ноябрь 2019 - Июль 2020</div>
-                <div className="main-page__company-name">
-                  Фронтенд-разработчик
-                  {/* , UI/UX-дизайн */} в Osfix
-                </div>
-              </li>
-              {/* <li>
+          <div className="main-page__card main-page__card--history">
+            <div className="main-page__job-history">
+              <h2>Опыт работы</h2>
+              <ul>
+                <li>
+                  {/* <div className="main-page__date">Ноябрь 2019 - Тек. время</div> */}
+                  <div className="main-page__date">Ноябрь 2019 - Июль 2020</div>
+                  <div className="main-page__company-name">
+                    Фронтенд-разработчик
+                    {/* , UI/UX-дизайн */} в Osfix
+                  </div>
+                </li>
+                {/* <li>
                 <div className="main-page__date">Июнь 2019 - Тек. время</div>
                 <div className="main-page__company-name">Osfix</div>
               </li> */}
-            </ul>
+              </ul>
+            </div>
+            <div className="main-page__job-history">
+              <h2>Образование</h2>
+              <ul>
+                <li>
+                  {/* <div className="main-page__date">Ноябрь 2019 - Тек. время</div> */}
+                  <div className="main-page__date">4.53 GPA</div>
+                  <div className="main-page__company-name">
+                    Бакалавр - "Программная Инженерия" в СПБГУТ
+                  </div>
+                </li>
+                {/* <li>
+                <div className="main-page__date">Июнь 2019 - Тек. время</div>
+                <div className="main-page__company-name">Osfix</div>
+              </li> */}
+              </ul>
+            </div>
           </div>
         </div>
       </div>

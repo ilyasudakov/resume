@@ -86,6 +86,7 @@
 
                 .main-page__img {
                     max-width: 80%;
+                    // max-height: none;
                     margin: 10px 0;
                 }
 
@@ -122,6 +123,7 @@
                     .main-page__img {
                         border-radius: 15px;
                         max-width: 80%;
+                        max-height: 180px;
                         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.75);
                     }
                 }
@@ -131,10 +133,12 @@
                 align-items: stretch;
                 .main-page__card {
                     padding: 10px 15px;
+                    align-items: flex-start;
+                    justify-content: flex-start;
                     h2 {
                         text-align: left;
                         // font-size: 100%;
-                        margin-bottom: 15px;
+                        margin-bottom: 5px;
                     }
                     ul {
                         margin: 5px 0;
@@ -154,7 +158,16 @@
                             margin-bottom: 5px;
                         }
                     }
-                    &--job-history {
+                    &--history {
+                        h2 {
+                            margin-bottom: 5px;
+                        }
+                        .main-page__job-history {
+                            margin-bottom: 15px;
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+                        }
                         ul {
                             li {
                                 .main-page__date {
