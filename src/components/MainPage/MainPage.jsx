@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import './MainPage.scss'
+// import './MainPage.scss'
 import { numberToString } from '../../functions.js'
-import crmLogo from '../../assets/crm_logo.png'
+// import crmLogo from '../../assets/crm_logo.png'
 import weatherAppPic from '../../assets/weather_app1.png'
 import spotifyAppPic from '../../assets/spotify_app1.png'
 import oceanAppPic from '../../assets/ocean_app1.png'
