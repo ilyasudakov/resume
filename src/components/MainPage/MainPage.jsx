@@ -1,10 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import './MainPage.scss'
+import { numberToString } from '../../functions.js'
 import crmLogo from '../../assets/crm_logo.png'
 import weatherAppPic from '../../assets/weather_app1.png'
 import spotifyAppPic from '../../assets/spotify_app1.png'
 import oceanAppPic from '../../assets/ocean_app1.png'
-import { Link } from 'react-router-dom'
 
 const MainPage = (props) => {
   return (
@@ -13,9 +15,17 @@ const MainPage = (props) => {
         <div className="main-page__title">
           <h1>Судаков Илья, Фронтенд-разработчик</h1>
           <h2>
-            React-разработчик из Санкт-Петербурга. Worked as a technical writer
-            for 3+ years, but recently made the jump into UX Writing. Currently
-            looking for her next opportunity!
+            React-разработчик из Санкт-Петербурга,{' '}
+            {`${
+              new Date().getFullYear() -
+              new Date(897609600 * 1000).getFullYear()
+            } ${numberToString(
+              new Date().getFullYear() -
+                new Date(897609600 * 1000).getFullYear(),
+              ['год', 'года', 'лет'],
+            )}`}
+            . Worked as a technical writer for 3+ years, but recently made the
+            jump into UX Writing. Currently looking for her next opportunity!
           </h2>
         </div>
         <h2>Небольшие проекты</h2>
@@ -24,22 +34,36 @@ const MainPage = (props) => {
             <img className="main-page__img" src={weatherAppPic} alt="" />
             <h2>Weather App</h2>
             <h3>
-              Фронтенд/Разработка UI системы для управления малым предприятием
+              Приложение для просмотра прогноза погоды на неделю с определением
+              местоположения пользователя
             </h3>
+            <div className="main-page__skills">
+              <div className="main-page__text-item">React</div>
+              <div className="main-page__text-item">OpenWeather API</div>
+            </div>
           </Link>
           <Link className="main-page__card" to="/spotify-app">
             <img className="main-page__img" src={spotifyAppPic} alt="" />
             <h2>Spotify Statistics App</h2>
             <h3>
-              Фронтенд/Разработка UI системы для управления малым предприятием
+              Приложение для просмотра топ-списков песен, исполнителей и списка
+              рекомендаций пользователя Spotify
             </h3>
+            <div className="main-page__skills">
+              <div className="main-page__text-item">React</div>
+              <div className="main-page__text-item">Spotify API</div>
+            </div>
           </Link>
           <Link className="main-page__card" to="/ocean-app">
             <img className="main-page__img" src={oceanAppPic} alt="" />
             <h2>Ocean</h2>
             <h3>
-              Фронтенд/Разработка UI системы для управления малым предприятием
+              Приложение, имитирующее волны океана с использованием библиотеки React Three Fiber и Perlin 3D noise
             </h3>
+            <div className="main-page__skills">
+              <div className="main-page__text-item">React</div>
+              <div className="main-page__text-item">React Three Fiber</div>
+            </div>
           </Link>
         </div>
         <h2>Большие проекты</h2>
@@ -47,7 +71,7 @@ const MainPage = (props) => {
           <Link className="main-page__card" to="/crm">
             <h2>CRM/ERP-система</h2>
             <h3>
-              Фронтенд/Разработка UI системы для управления малым предприятием
+              Фронтенд/Разработка UI для системы управления малым предприятием
             </h3>
             {/* <img className="main-pa ge__img" src={crmLogo} alt="" /> */}
           </Link>
