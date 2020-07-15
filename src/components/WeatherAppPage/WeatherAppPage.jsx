@@ -30,7 +30,21 @@ const WeatherAppPage = (props) => {
             Weather App
           </h2>
           <div className="app-page__links">
-            <a href="/">GitHub</a>, <a href="/">Live</a>
+            <a
+              href="https://github.com/ilyasudakov/weatherApp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            ,{' '}
+            <a
+              href="https://weatherapp-ilyasudakov.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live
+            </a>
           </div>
           <h3>
             Приложение для просмотра прогноза погоды на неделю с определением

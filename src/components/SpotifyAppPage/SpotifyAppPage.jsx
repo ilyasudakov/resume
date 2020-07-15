@@ -29,7 +29,21 @@ const SpotifyAppPage = (props) => {
             Spotify Statistics App
           </h2>
           <div className="app-page__links">
-            <a href="/">GitHub</a>, <a href="/">Live</a>
+            <a
+              href="https://github.com/ilyasudakov/music_app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            ,{' '}
+            <a
+              href="https://spotify-stats-ilyasudakov.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live
+            </a>
           </div>
           <h3>
             Приложение для просмотра топ-списков песен, исполнителей и списка

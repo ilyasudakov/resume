@@ -27,7 +27,21 @@ const OceanAppPage = (props) => {
             Ocean App
           </h2>
           <div className="app-page__links">
-            <a href="/">GitHub</a>, <a href="/">Live</a>
+            <a
+              href="https://github.com/ilyasudakov/ThreeJS_test"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+            ,{' '}
+            <a
+              href="https://ocean-ilyasudakov.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live
+            </a>
           </div>
           <h3>
             Приложение, имитирующее волны океана с использованием библиотеки
