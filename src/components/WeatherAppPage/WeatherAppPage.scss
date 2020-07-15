@@ -83,4 +83,25 @@
             }
         }
     }
+
+    @media (max-width: 768px) {
+        & {
+            .main-page {
+                &__content {
+                    .weather-app-page__images {
+                        height: 380px;
+                        &-wrapper {
+                            // position: relative;
+                            // flex-direction: column;
+                            align-items: flex-start;
+                            .weather-app-page__img--screenshot {
+                                max-width: 500px;
+                                height: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
