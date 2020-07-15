@@ -35,6 +35,14 @@
             .app-page__links {
                 margin: 15px 0;
                 font-size: 120%;
+                a {
+                    // text-decoration: none;
+                    color: #7700ffcc;
+
+                    &:hover {
+                        color: #7700ffff;
+                    }
+                }
             }
 
             h3 {

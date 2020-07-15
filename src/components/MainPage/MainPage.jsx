@@ -59,6 +59,15 @@ const MainPage = (props) => {
                   ВКонтакте
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://spb.hh.ru/resume/5ec35f27ff076a2f870039ed1f6c3464485868"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  HeadHunter
+                </a>
+              </li>
             </ul>
           </div>
           <div className="main-page__card main-page__card--history">
@@ -144,6 +153,13 @@ const MainPage = (props) => {
             <h3>
               Фронтенд/Разработка UI для системы управления малым предприятием
             </h3>
+            <div className="main-page__skills">
+              <div className="main-page__text-item">React</div>
+              <div className="main-page__text-item">SASS</div>
+              <div className="main-page__text-item">pdfMake</div>
+              <div className="main-page__text-item">ExcelJS</div>
+              <div className="main-page__text-item">ChartJS</div>
+            </div>
             {/* <img className="main-pa ge__img" src={crmLogo} alt="" /> */}
           </Link>
         </div>
