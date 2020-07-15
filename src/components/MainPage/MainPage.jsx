@@ -3,6 +3,7 @@ import './MainPage.scss'
 import crmLogo from '../../assets/crm_logo.png'
 import weatherAppPic from '../../assets/weather_app1.png'
 import spotifyAppPic from '../../assets/spotify_app1.png'
+import oceanAppPic from '../../assets/ocean_app1.png'
 import { Link } from 'react-router-dom'
 
 const MainPage = (props) => {
@@ -34,11 +35,11 @@ const MainPage = (props) => {
             </h3>
           </Link>
           <Link className="main-page__card" to="/ocean-app">
+            <img className="main-page__img" src={oceanAppPic} alt="" />
             <h2>Ocean</h2>
             <h3>
               Фронтенд/Разработка UI системы для управления малым предприятием
             </h3>
-            {/* <img className="main-page__img" src={crmLogo} alt="" /> */}
           </Link>
         </div>
         <h2>Большие проекты</h2>
@@ -48,7 +49,7 @@ const MainPage = (props) => {
             <h3>
               Фронтенд/Разработка UI системы для управления малым предприятием
             </h3>
-            {/* <img className="main-page__img" src={crmLogo} alt="" /> */}
+            {/* <img className="main-pa ge__img" src={crmLogo} alt="" /> */}
           </Link>
         </div>
         <h2>Мой опыт</h2>
