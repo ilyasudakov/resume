@@ -1,0 +1,11 @@
+.app-page--spotify {
+    .main-page {
+        &__content {
+            .app-page__images {
+                height: 420px;
+                .app-page__images-wrapper {
+                }
+            }
+        }
+    }
+}

@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 // import './MainPage.scss'
 import { numberToString } from '../../functions.js'
 // import crmLogo from '../../assets/crm_logo.png'
-import weatherAppPic from '../../assets/weather_app1.png'
-import spotifyAppPic from '../../assets/spotify_app1.png'
-import oceanAppPic from '../../assets/ocean_app1.png'
+import weatherAppPic from '../../assets/weather_app/weather_app1.png'
+import spotifyAppPic from '../../assets/spotify_app/spotify_app1.png'
+import oceanAppPic from '../../assets/ocean_app/ocean_app1.png'
 
 const MainPage = (props) => {
   return (
@@ -24,8 +24,7 @@ const MainPage = (props) => {
                 new Date(897609600 * 1000).getFullYear(),
               ['год', 'года', 'лет'],
             )}`}
-            . Worked as a technical writer for 3+ years, but recently made the
-            jump into UX Writing. Currently looking for her next opportunity!
+            . В данный момент ищу работу по вакансии junior-разработчик!
           </h2>
         </div>
         <h2>Небольшие проекты</h2>
@@ -59,7 +58,8 @@ const MainPage = (props) => {
             <img className="main-page__img" src={oceanAppPic} alt="" />
             <h2>Ocean</h2>
             <h3>
-              Приложение, имитирующее волны океана с использованием библиотеки React Three Fiber и Perlin 3D noise
+              Приложение, имитирующее волны океана с использованием библиотеки
+              React Three Fiber и Perlin 3D noise
             </h3>
             <div className="main-page__skills">
               <div className="main-page__text-item">React</div>
