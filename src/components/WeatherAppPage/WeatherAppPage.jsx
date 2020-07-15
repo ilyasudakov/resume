@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './WeatherAppPage.scss'
 
 import backIcon from '../../assets/arrow-back.svg'
@@ -10,6 +10,10 @@ import screenshot4 from '../../assets/weather_app5.png'
 import { Link } from 'react-router-dom'
 
 const WeatherAppPage = (props) => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className="weather-app-page">
       <div className="main-page">

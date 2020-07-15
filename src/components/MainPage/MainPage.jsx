@@ -39,6 +39,7 @@ const MainPage = (props) => {
             </h3>
             <div className="main-page__skills">
               <div className="main-page__text-item">React</div>
+              <div className="main-page__text-item">Recharts</div>
               <div className="main-page__text-item">OpenWeather API</div>
             </div>
           </Link>
@@ -76,7 +77,7 @@ const MainPage = (props) => {
             {/* <img className="main-pa ge__img" src={crmLogo} alt="" /> */}
           </Link>
         </div>
-        <h2>Мой опыт</h2>
+        <h2>Контакты и Опыт работы</h2>
         <div className="main-page__list main-page__list--links">
           <div className="main-page__card">
             <h2>Связь со мной</h2>
