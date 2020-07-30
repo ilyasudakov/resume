@@ -9,6 +9,7 @@ import WeatherAppPage from './components/WeatherAppPage/WeatherAppPage'
 import SpotifyAppPage from './components/SpotifyAppPage/SpotifyAppPage'
 import OceanAppPage from './components/OceanAppPage/OceanAppPage'
 import CRMAppPage from './components/CRMAppPage/CRMAppPage'
+import TorrentAppPage from './components/TorrentAppPage/TorrentAppPage'
 
 function App() {
   return (
@@ -25,6 +26,11 @@ function App() {
           render={(props) => <SpotifyAppPage />}
         />
         <Route exact path="/ocean-app" render={(props) => <OceanAppPage />} />
+        <Route
+          exact
+          path="/torrent-app"
+          render={(props) => <TorrentAppPage />}
+        />
         <Route exact path="/crm" render={(props) => <CRMAppPage />} />
         <Route exact path="/" render={(props) => <MainPage />} />
       </BrowserRouter>

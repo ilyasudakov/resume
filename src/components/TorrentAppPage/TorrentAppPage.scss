@@ -1,0 +1,16 @@
+.app-page--torrent {
+    .main-page {
+        &__content {
+            .app-page__img--screenshot {
+                max-height: none;
+                max-width: 600px;
+                // width: 1000px;
+            }
+            .app-page__images {
+                // height: 420px;
+                .app-page__images-wrapper {
+                }
+            }
+        }
+    }
+}

@@ -7,6 +7,7 @@ import { numberToString } from '../../functions.js'
 import weatherAppPic from '../../assets/weather_app/weather_app1.png'
 import spotifyAppPic from '../../assets/spotify_app/spotify_app1.png'
 import oceanAppPic from '../../assets/ocean_app/ocean_app1.png'
+import torrentAppPic from '../../assets/torrent_app/torrent_app1.png'
 
 const MainPage = (props) => {
   return (
@@ -143,6 +144,18 @@ const MainPage = (props) => {
             <div className="main-page__skills">
               <div className="main-page__text-item">React</div>
               <div className="main-page__text-item">React Three Fiber</div>
+            </div>
+          </Link>
+          <Link className="main-page__card" to="/torrent-app">
+            <img className="main-page__img" src={torrentAppPic} alt="" />
+            <h2>Torrent App</h2>
+            <h3>
+              Приложение, позволяющее скачивать торрент-файлы, просматривать
+              скачиваемые медиа файлы
+            </h3>
+            <div className="main-page__skills">
+              <div className="main-page__text-item">React</div>
+              <div className="main-page__text-item">WebTorrent</div>
             </div>
           </Link>
         </div>

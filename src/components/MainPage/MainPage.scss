@@ -113,6 +113,7 @@
             }
 
             &--projects {
+                flex-wrap: wrap;
                 .main-page__card {
                     cursor: pointer;
 
